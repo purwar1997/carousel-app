@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Carousel from "./components/Carousel";
+import { useState } from "react";
 
-function App() {
+function App({ user: userName, company = "LCO" }) {
+  const [index, setIndex] = useState(0);
+
+  if (index > 9) {
+    setIndex(0);
+  }
+
+  if (index < 0) {
+    setIndex(9);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>
+        Welcome to {company}, {userName}
+      </h1>
+      <p>Which technology do you want to learn ?</p>
+
+      <Carousel index={index} setIndex={setIndex} />
+
+      <button onClick={() => setIndex(0)}>
+        <i class="fa-solid fa-rotate-right"></i>
+      </button>
+    </>
   );
 }
 
