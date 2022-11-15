@@ -19,4 +19,4 @@ This project is a simple carousel app created using HTML, CSS and React.js.
 
 ![preview](./preview.png)
 
-### [Live link]() of the project.
+### [Live link](https://carousel-app-theta.vercel.app/) of the project.
