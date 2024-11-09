@@ -1,12 +1,7 @@
-body {
+* {
   margin: 0;
   padding: 0;
-  outline: 0;
-  font-family: "Segoe UI";
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
   color: #313131;
-}
-
-#root {
-  margin-top: 80px;
-  text-align: center;
 }

@@ -1,32 +1,17 @@
-import "./App.css";
-import Carousel from "./components/Carousel";
-import { useState } from "react";
+import { useState } from 'react';
+import Carousel from './components/Carousel';
+import './App.css';
 
-function App({ user: userName, company = "LCO" }) {
+const App = () => {
   const [index, setIndex] = useState(0);
 
-  if (index > 9) {
-    setIndex(0);
-  }
-
-  if (index < 0) {
-    setIndex(9);
-  }
-
   return (
-    <>
-      <h1>
-        Welcome to {company}, {userName}
-      </h1>
+    <main>
+      <h1>Welcome to iNeuron</h1>
       <p>Which technology do you want to learn ?</p>
-
       <Carousel index={index} setIndex={setIndex} />
-
-      <button onClick={() => setIndex(0)}>
-        <i class="fa-solid fa-rotate-right"></i>
-      </button>
-    </>
+    </main>
   );
-}
+};
 
 export default App;
