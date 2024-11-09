@@ -1,22 +1,21 @@
-# Carousel
+# Carousel App
 
 ![HTML](https://img.shields.io/badge/-HTML-red)
-![CSS](https://img.shields.io/badge/-CSS-green)
-![React](https://img.shields.io/badge/-React-blueviolet)
+![CSS](https://img.shields.io/badge/-CSS-yellowgreen)
+![React JS](https://img.shields.io/badge/-React_JS-blue)
 
 ## Description
 
-This project is a simple carousel app created using HTML, CSS and React.js.
+This project is a React app that allows users to browse through a list of technologies via a carousel.
 
-## Things I learnt by creating this project :-
+## Learnings from this project -
 
-- What is `useState()` hook and how to use it to change the state of React app
-- What are `state variables` and `setter functions`
-- What are `props` and how to pass them inside `function components`
-- What is meant by `rendering of component` in React
+- How state of a React app is managed using `useState` hook
+- How data can be passed in a component via `props`
+- What is meant by `rendering of components` in React
 
-### Preview of the project :-
+### Preview of the project
 
 ![preview](./preview.png)
 
-### [Live link](https://carousel-app-theta.vercel.app/) of the project.
+### [Live link](https://carousel-app-dun.vercel.app/) of the project.
